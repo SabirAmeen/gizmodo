@@ -63,24 +63,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 3, ../sass/style.scss */
+/* line 4, ../sass/style.scss */
 a {
   color: #000;
   text-decoration: none;
 }
 
-/* line 8, ../sass/style.scss */
+/* line 9, ../sass/style.scss */
 #pagehead {
   height: 50px;
   padding: 1px;
   border-bottom: 1px solid #ddd;
 }
-/* line 12, ../sass/style.scss */
+/* line 13, ../sass/style.scss */
 #pagehead h1 {
   font-family: 'Nunito', sans-serif;
   float: left;
   height: 100%;
-  width: 82%;
   line-height: 1.7;
   font-size: 35px;
   font-weight: bold;
@@ -95,15 +94,39 @@ a {
   margin-left: 11px;
 }
 
-/* line 30, ../sass/style.scss */
-#loginbtn {
+/* line 29, ../sass/style.scss */
+#loginbtn, #searchicon {
   display: none;
 }
 
 @media screen and (min-width: 600px) {
-  /* line 35, ../sass/style.scss */
+  /* line 34, ../sass/style.scss */
   #loginbtn {
     display: inline-block;
     float: right;
+    width: 100px;
+    height: 25px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    margin: 15px 15px;
+    color: #aaa;
+  }
+}
+@media screen and (min-width: 800px) {
+  /* line 46, ../sass/style.scss */
+  h1 {
+    margin-left: 35%;
+  }
+
+  /* line 49, ../sass/style.scss */
+  #searchicon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-top: 17px;
   }
 }

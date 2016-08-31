@@ -1,5 +1,6 @@
 @import "compass/reset";
 @import "compass";
+@import "mixin";
 a {
     color: #000;
     text-decoration: none;
@@ -13,7 +14,6 @@ a {
         font-family: 'Nunito', sans-serif;
         @include float-left;
         height: 100%;
-        width: 82%;
         line-height: 1.7;
         font-size: 35px;
         font-weight: bold;
@@ -21,13 +21,12 @@ a {
 }
 
 #menuicon {
-    width: 39px;
-    height: 39px;
+	@include size(39px);
     @include float-left;
     margin-top: 11px;
     margin-left: 11px;
 }
-#loginbtn
+#loginbtn, #searchicon
 {
 	display: none;
 }
@@ -35,5 +34,22 @@ a {
 	#loginbtn{
 		display: inline-block;
 		float: right;
+		@include size(100px,25px);
+		@include border-radius(5px);
+		border:1px solid #ddd;
+		background-color: #fff;
+		margin:15px 15px;
+		color:#aaa;
+	}
+}
+@media screen and (min-width: 800px){
+	h1{
+		margin-left: 35%;
+	}
+	#searchicon{
+		display: inline-block;
+		@include size(20px);
+    	float: left;
+    	margin-top: 17px;
 	}
 }

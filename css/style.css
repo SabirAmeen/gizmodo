@@ -75,8 +75,9 @@ a {
   padding: 1px;
   border-bottom: 1px solid #ddd;
 }
-/* line 13, ../sass/style.scss */
-#pagehead h1 {
+
+/* line 15, ../sass/style.scss */
+#logo {
   font-family: 'Nunito', sans-serif;
   float: left;
   height: 100%;
@@ -85,7 +86,7 @@ a {
   font-weight: bold;
 }
 
-/* line 23, ../sass/style.scss */
+/* line 24, ../sass/style.scss */
 #menuicon {
   width: 39px;
   height: 39px;
@@ -94,13 +95,15 @@ a {
   margin-left: 11px;
 }
 
-/* line 29, ../sass/style.scss */
-#loginbtn, #searchicon {
+/* line 31, ../sass/style.scss */
+#loginbtn,
+#searchicon,
+#socialbtn {
   display: none;
 }
 
 @media screen and (min-width: 600px) {
-  /* line 34, ../sass/style.scss */
+  /* line 38, ../sass/style.scss */
   #loginbtn {
     display: inline-block;
     float: right;
@@ -116,12 +119,12 @@ a {
   }
 }
 @media screen and (min-width: 800px) {
-  /* line 46, ../sass/style.scss */
+  /* line 51, ../sass/style.scss */
   h1 {
     margin-left: 35%;
   }
 
-  /* line 49, ../sass/style.scss */
+  /* line 54, ../sass/style.scss */
   #searchicon {
     display: inline-block;
     width: 20px;

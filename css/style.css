@@ -69,7 +69,7 @@ a {
   text-decoration: none;
 }
 
-/* line 7, ../sass/_common.scss */
+/* line 6, ../sass/_common.scss */
 #loginbtn,
 #searchicon,
 #socialbtn {
@@ -82,16 +82,14 @@ a {
   padding: 1px;
   border-bottom: 1px solid #ddd;
 }
-
-/* line 7, ../sass/_header.scss */
-#mainhead {
+/* line 5, ../sass/_header.scss */
+#pagehead #masthead {
   display: inline-block;
   height: 100%;
   width: 77%;
 }
-
-/* line 13, ../sass/_header.scss */
-#logo {
+/* line 10, ../sass/_header.scss */
+#pagehead #logo {
   font-family: "Nunito", sans-serif;
   float: left;
   height: 100%;
@@ -99,9 +97,14 @@ a {
   font-size: 35px;
   font-weight: bold;
 }
-
-/* line 22, ../sass/_header.scss */
-#menuicon {
+@media screen and (min-width: 800px) {
+  /* line 18, ../sass/_header.scss */
+  #pagehead #logo {
+    margin-left: 50%;
+  }
+}
+/* line 23, ../sass/_header.scss */
+#pagehead #menuicon {
   width: 39px;
   height: 39px;
   float: left;
@@ -110,7 +113,7 @@ a {
 }
 
 @media screen and (min-width: 600px) {
-  /* line 30, ../sass/_header.scss */
+  /* line 32, ../sass/_header.scss */
   #loginbtn {
     display: inline-block;
     float: right;
@@ -124,27 +127,21 @@ a {
     margin: 10px 15px;
     color: #aaa;
   }
-
-  /* line 40, ../sass/_header.scss */
+  /* line 41, ../sass/_header.scss */
   #loginbtn:hover {
     color: white;
     background-color: #0093ec;
   }
 }
 @media screen and (min-width: 800px) {
-  /* line 47, ../sass/_header.scss */
-  #logo {
-    margin-left: 50%;
-  }
-
-  /* line 50, ../sass/_header.scss */
-  #mainhead:hover #socialbtn {
+  /* line 49, ../sass/_header.scss */
+  #masthead:hover #socialbtn {
     display: inline-block;
     line-height: 3.3;
     padding-left: 13px;
   }
 
-  /* line 55, ../sass/_header.scss */
+  /* line 54, ../sass/_header.scss */
   #searchicon {
     display: inline-block;
     width: 20px;
@@ -153,14 +150,18 @@ a {
     margin-top: 17px;
   }
 
-  /* line 61, ../sass/_header.scss */
+  /* line 60, ../sass/_header.scss */
   #plusicon {
     width: 10px;
     height: 10px;
   }
 
-  /* line 64, ../sass/_header.scss */
+  /* line 63, ../sass/_header.scss */
   #follow {
     color: blue;
+  }
+  /* line 65, ../sass/_header.scss */
+  #follow:hover {
+    text-decoration: underline;
   }
 }

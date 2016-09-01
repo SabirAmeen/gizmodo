@@ -2,28 +2,30 @@
     height: 50px;
     padding: 1px;
     border-bottom: 1px solid #ddd;
-}
-
-#mainhead {
-    display: inline-block;
-    height: 100%;
-    width: 77%;
-}
-
-#logo {
-    font-family: $logo-font-family;
-    @include float-left;
-    height: 100%;
-    line-height: 1.7;
-    font-size: 35px;
-    font-weight: bold;
-}
-
-#menuicon {
-    @include size(39px);
-    @include float-left;
-    margin-top: 11px;
-    margin-left: 11px;
+    #masthead {
+        display: inline-block;
+        height: 100%;
+        width: 77%;
+    }
+    #logo {
+        font-family: $logo-font-family;
+        @include float-left;
+        height: 100%;
+        line-height: 1.7;
+        font-size: 35px;
+        font-weight: bold;
+        @media screen and (min-width: $second-break) {
+            & {
+                margin-left: 50%;
+            }
+        }
+    }
+    #menuicon {
+        @include size(39px);
+        @include float-left;
+        margin-top: 11px;
+        margin-left: 11px;
+    }
 }
 
 @media screen and (min-width: $first-break) {
@@ -36,18 +38,15 @@
         background-color: $white;
         margin: 10px 15px;
         color: #aaa;
-    }
-    #loginbtn:hover {
-        color: white;
-        background-color: #0093ec;
+        &:hover {
+            color: white;
+            background-color: #0093ec;
+        }
     }
 }
 
 @media screen and (min-width: $second-break) {
-    #logo {
-        margin-left: 50%;
-    }
-    #mainhead:hover  #socialbtn {
+    #masthead:hover #socialbtn {
         display: inline-block;
         line-height: 3.3;
         padding-left: 13px;
@@ -63,5 +62,8 @@
     }
     #follow {
         color: $link-color;
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }

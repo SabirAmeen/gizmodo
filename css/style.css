@@ -98,12 +98,12 @@ a {
   font-weight: bold;
 }
 @media screen and (min-width: 800px) {
-  /* line 18, ../sass/_header.scss */
+  /* line 10, ../sass/_header.scss */
   #pagehead #logo {
     margin-left: 50%;
   }
 }
-/* line 23, ../sass/_header.scss */
+/* line 21, ../sass/_header.scss */
 #pagehead #menuicon {
   width: 39px;
   height: 39px;
@@ -113,7 +113,7 @@ a {
 }
 
 @media screen and (min-width: 600px) {
-  /* line 32, ../sass/_header.scss */
+  /* line 30, ../sass/_header.scss */
   #loginbtn {
     display: inline-block;
     float: right;
@@ -127,21 +127,21 @@ a {
     margin: 10px 15px;
     color: #aaa;
   }
-  /* line 41, ../sass/_header.scss */
+  /* line 39, ../sass/_header.scss */
   #loginbtn:hover {
     color: white;
     background-color: #0093ec;
   }
 }
 @media screen and (min-width: 800px) {
-  /* line 49, ../sass/_header.scss */
+  /* line 47, ../sass/_header.scss */
   #masthead:hover #socialbtn {
     display: inline-block;
     line-height: 3.3;
     padding-left: 13px;
   }
 
-  /* line 54, ../sass/_header.scss */
+  /* line 52, ../sass/_header.scss */
   #searchicon {
     display: inline-block;
     width: 20px;
@@ -150,17 +150,17 @@ a {
     margin-top: 17px;
   }
 
-  /* line 60, ../sass/_header.scss */
+  /* line 58, ../sass/_header.scss */
   #plusicon {
     width: 10px;
     height: 10px;
   }
 
-  /* line 63, ../sass/_header.scss */
+  /* line 61, ../sass/_header.scss */
   #follow {
     color: blue;
   }
-  /* line 65, ../sass/_header.scss */
+  /* line 63, ../sass/_header.scss */
   #follow:hover {
     text-decoration: underline;
   }

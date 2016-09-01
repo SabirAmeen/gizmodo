@@ -15,9 +15,7 @@
         font-size: 35px;
         font-weight: bold;
         @media screen and (min-width: $second-break) {
-            & {
-                margin-left: 50%;
-            }
+            margin-left: 50%;
         }
     }
     #menuicon {

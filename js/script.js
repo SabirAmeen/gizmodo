@@ -1,3 +1,4 @@
-$('#logo').hover(function(){
-	$('#socialbtn').show();
+$('#logo').mouseenter(function() {
+    $('#socialbtn').show();
 });
+

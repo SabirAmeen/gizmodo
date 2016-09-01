@@ -63,22 +63,34 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 4, ../sass/style.scss */
+/* line 1, ../sass/_common.scss */
 a {
   color: #000;
   text-decoration: none;
 }
 
-/* line 9, ../sass/style.scss */
+/* line 6, ../sass/_common.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 10, ../sass/_common.scss */
+#loginbtn,
+#searchicon,
+#socialbtn {
+  display: none;
+}
+
+/* line 1, ../sass/_header.scss */
 #pagehead {
   height: 50px;
   padding: 1px;
   border-bottom: 1px solid #ddd;
 }
 
-/* line 15, ../sass/style.scss */
+/* line 7, ../sass/_header.scss */
 #logo {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   float: left;
   height: 100%;
   line-height: 1.7;
@@ -86,7 +98,7 @@ a {
   font-weight: bold;
 }
 
-/* line 24, ../sass/style.scss */
+/* line 16, ../sass/_header.scss */
 #menuicon {
   width: 39px;
   height: 39px;
@@ -95,41 +107,57 @@ a {
   margin-left: 11px;
 }
 
-/* line 31, ../sass/style.scss */
-#loginbtn,
-#searchicon,
-#socialbtn {
-  display: none;
-}
-
 @media screen and (min-width: 600px) {
-  /* line 38, ../sass/style.scss */
+  /* line 24, ../sass/_header.scss */
   #loginbtn {
     display: inline-block;
     float: right;
     width: 100px;
-    height: 25px;
+    height: 30px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
     border: 1px solid #ddd;
     background-color: #fff;
-    margin: 15px 15px;
+    margin: 10px 15px;
     color: #aaa;
+  }
+
+  /* line 34, ../sass/_header.scss */
+  #loginbtn:hover {
+    color: white;
+    background-color: #0093ec;
   }
 }
 @media screen and (min-width: 800px) {
-  /* line 51, ../sass/style.scss */
-  h1 {
+  /* line 41, ../sass/_header.scss */
+  #logo {
     margin-left: 35%;
   }
 
-  /* line 54, ../sass/style.scss */
+  /* line 44, ../sass/_header.scss */
   #searchicon {
     display: inline-block;
     width: 20px;
     height: 20px;
     float: left;
     margin-top: 17px;
+  }
+
+  /* line 50, ../sass/_header.scss */
+  #socialbtn {
+    line-height: 3.5;
+    padding-left: 13px;
+  }
+
+  /* line 54, ../sass/_header.scss */
+  #plusicon {
+    width: 10px;
+    height: 10px;
+  }
+
+  /* line 57, ../sass/_header.scss */
+  #follow {
+    color: blue;
   }
 }

@@ -1,0 +1,14 @@
+a {
+    color: $black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#loginbtn,
+#searchicon,
+#socialbtn {
+    display: none;
+}

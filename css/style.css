@@ -63,32 +63,53 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 1, ../sass/_common.scss */
+/* line 1, ../sass/Partials/_common.scss */
 a {
   color: #000;
   text-decoration: none;
 }
 
-/* line 6, ../sass/_common.scss */
+/* line 6, ../sass/Partials/_common.scss */
 #loginbtn,
 #searchicon,
 #socialbtn {
   display: none;
 }
 
-/* line 1, ../sass/_header.scss */
+/* line 1, ../sass/Partials/_header.scss */
 #pagehead {
   height: 50px;
   padding: 1px;
   border-bottom: 1px solid #ddd;
 }
-/* line 5, ../sass/_header.scss */
+/* line 5, ../sass/Partials/_header.scss */
 #pagehead #masthead {
   display: inline-block;
   height: 100%;
-  width: 70%;
+  width: 69%;
 }
-/* line 10, ../sass/_header.scss */
+@media screen and (min-width: 800px) {
+  /* line 10, ../sass/Partials/_header.scss */
+  #pagehead #masthead:hover #socialbtn {
+    display: inline-block;
+    line-height: 3.3;
+    padding-left: 13px;
+  }
+  /* line 15, ../sass/Partials/_header.scss */
+  #pagehead #masthead #plusicon {
+    width: 10px;
+    height: 10px;
+  }
+  /* line 18, ../sass/Partials/_header.scss */
+  #pagehead #masthead #follow {
+    color: blue;
+  }
+  /* line 20, ../sass/Partials/_header.scss */
+  #pagehead #masthead #follow:hover {
+    text-decoration: underline;
+  }
+}
+/* line 26, ../sass/Partials/_header.scss */
 #pagehead #logo {
   font-family: "Nunito", sans-serif;
   float: left;
@@ -98,12 +119,12 @@ a {
   font-weight: bold;
 }
 @media screen and (min-width: 800px) {
-  /* line 10, ../sass/_header.scss */
+  /* line 26, ../sass/Partials/_header.scss */
   #pagehead #logo {
     margin-left: 50%;
   }
 }
-/* line 21, ../sass/_header.scss */
+/* line 37, ../sass/Partials/_header.scss */
 #pagehead #menuicon {
   width: 39px;
   height: 39px;
@@ -111,10 +132,9 @@ a {
   margin-top: 11px;
   margin-left: 11px;
 }
-
 @media screen and (min-width: 600px) {
-  /* line 30, ../sass/_header.scss */
-  #loginbtn {
+  /* line 43, ../sass/Partials/_header.scss */
+  #pagehead #loginbtn {
     display: inline-block;
     float: right;
     width: 100px;
@@ -127,41 +147,19 @@ a {
     margin: 10px 15px;
     color: #aaa;
   }
-  /* line 39, ../sass/_header.scss */
-  #loginbtn:hover {
+  /* line 53, ../sass/Partials/_header.scss */
+  #pagehead #loginbtn:hover {
     color: white;
     background-color: #0093ec;
   }
 }
 @media screen and (min-width: 800px) {
-  /* line 47, ../sass/_header.scss */
-  #masthead:hover #socialbtn {
-    display: inline-block;
-    line-height: 3.3;
-    padding-left: 13px;
-  }
-
-  /* line 52, ../sass/_header.scss */
-  #searchicon {
+  /* line 59, ../sass/Partials/_header.scss */
+  #pagehead #searchicon {
     display: inline-block;
     width: 20px;
     height: 20px;
     float: left;
     margin-top: 17px;
-  }
-
-  /* line 58, ../sass/_header.scss */
-  #plusicon {
-    width: 10px;
-    height: 10px;
-  }
-
-  /* line 61, ../sass/_header.scss */
-  #follow {
-    color: blue;
-  }
-  /* line 63, ../sass/_header.scss */
-  #follow:hover {
-    text-decoration: underline;
   }
 }

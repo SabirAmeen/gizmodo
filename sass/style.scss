@@ -1,7 +1,7 @@
 @import "compass/reset";
 @import "compass";
-@import "mixin";
-@import "variables";
-@import "common";
+@import "Modules/mixin";
+@import "Modules/variables";
+@import "Partials/common";
 // header
-@import "header";
+@import "Partials/header";

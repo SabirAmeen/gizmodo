@@ -69,12 +69,7 @@ a {
   text-decoration: none;
 }
 
-/* line 6, ../sass/_common.scss */
-a:hover {
-  text-decoration: underline;
-}
-
-/* line 10, ../sass/_common.scss */
+/* line 7, ../sass/_common.scss */
 #loginbtn,
 #searchicon,
 #socialbtn {
@@ -89,6 +84,13 @@ a:hover {
 }
 
 /* line 7, ../sass/_header.scss */
+#mainhead {
+  display: inline-block;
+  height: 100%;
+  width: 77%;
+}
+
+/* line 13, ../sass/_header.scss */
 #logo {
   font-family: "Nunito", sans-serif;
   float: left;
@@ -98,7 +100,7 @@ a:hover {
   font-weight: bold;
 }
 
-/* line 16, ../sass/_header.scss */
+/* line 22, ../sass/_header.scss */
 #menuicon {
   width: 39px;
   height: 39px;
@@ -108,7 +110,7 @@ a:hover {
 }
 
 @media screen and (min-width: 600px) {
-  /* line 24, ../sass/_header.scss */
+  /* line 30, ../sass/_header.scss */
   #loginbtn {
     display: inline-block;
     float: right;
@@ -123,19 +125,26 @@ a:hover {
     color: #aaa;
   }
 
-  /* line 34, ../sass/_header.scss */
+  /* line 40, ../sass/_header.scss */
   #loginbtn:hover {
     color: white;
     background-color: #0093ec;
   }
 }
 @media screen and (min-width: 800px) {
-  /* line 41, ../sass/_header.scss */
+  /* line 47, ../sass/_header.scss */
   #logo {
-    margin-left: 35%;
+    margin-left: 50%;
   }
 
-  /* line 44, ../sass/_header.scss */
+  /* line 50, ../sass/_header.scss */
+  #mainhead:hover #socialbtn {
+    display: inline-block;
+    line-height: 3.3;
+    padding-left: 13px;
+  }
+
+  /* line 55, ../sass/_header.scss */
   #searchicon {
     display: inline-block;
     width: 20px;
@@ -144,19 +153,13 @@ a:hover {
     margin-top: 17px;
   }
 
-  /* line 50, ../sass/_header.scss */
-  #socialbtn {
-    line-height: 3.5;
-    padding-left: 13px;
-  }
-
-  /* line 54, ../sass/_header.scss */
+  /* line 61, ../sass/_header.scss */
   #plusicon {
     width: 10px;
     height: 10px;
   }
 
-  /* line 57, ../sass/_header.scss */
+  /* line 64, ../sass/_header.scss */
   #follow {
     color: blue;
   }

@@ -4,6 +4,12 @@
     border-bottom: 1px solid #ddd;
 }
 
+#mainhead {
+    display: inline-block;
+    height: 100%;
+    width: 77%;
+}
+
 #logo {
     font-family: $logo-font-family;
     @include float-left;
@@ -22,7 +28,7 @@
 
 @media screen and (min-width: $first-break) {
     #loginbtn {
-        display:  inline-block;
+        display: inline-block;
         @include float-right;
         @include size(100px, 30px);
         @include border-radius(5px);
@@ -31,25 +37,26 @@
         margin: 10px 15px;
         color: #aaa;
     }
-    #loginbtn:hover{
-        color:white;
+    #loginbtn:hover {
+        color: white;
         background-color: #0093ec;
     }
 }
 
 @media screen and (min-width: $second-break) {
     #logo {
-        margin-left: 35%;
+        margin-left: 50%;
+    }
+    #mainhead:hover  #socialbtn {
+        display: inline-block;
+        line-height: 3.3;
+        padding-left: 13px;
     }
     #searchicon {
-        display:  inline-block;
+        display: inline-block;
         @include size(20px);
         @include float-left;
         margin-top: 17px;
-    }
-    #socialbtn {
-        line-height: 3.5;
-        padding-left: 13px;
     }
     #plusicon {
         @include size(10px);

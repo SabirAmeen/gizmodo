@@ -1,12 +1,11 @@
 #pagehead {
     height: 50px;
     padding: 1px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid $border-color;
     #masthead {
         display: inline-block;
-        height: 100%;
-        width: 69%;
-        @media screen and (min-width: $second-break) {
+        @include size(69%, 100%);
+        @media screen and (min-width: $tablet) {
             &:hover #socialbtn {
                 display: inline-block;
                 line-height: 3.3;
@@ -17,9 +16,6 @@
             }
             #follow {
                 color: $link-color;
-                &:hover {
-                    text-decoration: underline;
-                }
             }
         }
         #logo {
@@ -29,8 +25,11 @@
             line-height: 1.7;
             font-size: 35px;
             font-weight: bold;
-            @media screen and (min-width: $second-break) {
+            @media screen and (min-width: $tablet) {
                 margin-left: 50%;
+            }
+            a:hover {
+                text-decoration: none;
             }
         }
     }
@@ -41,12 +40,12 @@
         margin-left: 11px;
     }
     #loginbtn {
-        @media screen and (min-width: $first-break) {
+        @media screen and (min-width: $phones) {
             display: inline-block;
             @include float-right;
             @include size(100px, 30px);
             @include border-radius(5px);
-            border: 1px solid #ddd;
+            border: 1px solid $border-color;
             background-color: $white;
             margin: 10px 15px;
             color: #aaa;
@@ -57,7 +56,7 @@
         }
     }
     #searchicon {
-        @media screen and (min-width: $second-break) {
+        @media screen and (min-width: $tablet) {
             display: inline-block;
             @include size(20px);
             @include float-left;

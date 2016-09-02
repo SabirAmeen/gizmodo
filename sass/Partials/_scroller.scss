@@ -1,0 +1,57 @@
+.article-scroller {
+    width: 100%;
+    padding: 1rem 1rem 1rem 0.5rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    border-bottom: 1px solid $border-color;
+    @include box-sizing(border-box);
+    .article-content {
+        width: 70%;
+        position: relative;
+        display: inline-block;
+        @include box-sizing(border-box);
+        margin-left: 12px;
+        figure {
+            img {
+                width: 100%;
+            }
+            &:hover:after {
+                background-color: $black;
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                @include opacity(0.3);
+            }
+        }
+        header {
+            position: absolute;
+            bottom: 3px;
+            padding-right: 10px;
+        }
+        h2 {
+            display: inline;
+            color: $white;
+            background-color: rgba(0, 0, 0, 0.8);
+            font-family: 'Roboto', sans-serif;
+            font-size: 17px;
+            padding-left: 5px;
+            -webkit-box-decoration-break: clone;
+            line-height: 20px;
+            white-space: pre-line;
+            @media screen and (min-width: $desktop) {
+                font-size: 23px;
+                line-height: 25px;
+            }
+        }
+        @media screen and (min-width: $phones) {
+            width: 50%;
+        }
+        @media screen and (min-width: $tablet) {
+            width: 31.7%;
+        }
+    }
+}

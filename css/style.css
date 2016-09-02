@@ -109,8 +109,8 @@ a {
     text-decoration: underline;
   }
 }
-/* line 26, ../sass/Partials/_header.scss */
-#pagehead #logo {
+/* line 25, ../sass/Partials/_header.scss */
+#pagehead #masthead #logo {
   font-family: "Nunito", sans-serif;
   float: left;
   height: 100%;
@@ -119,8 +119,8 @@ a {
   font-weight: bold;
 }
 @media screen and (min-width: 800px) {
-  /* line 26, ../sass/Partials/_header.scss */
-  #pagehead #logo {
+  /* line 25, ../sass/Partials/_header.scss */
+  #pagehead #masthead #logo {
     margin-left: 50%;
   }
 }

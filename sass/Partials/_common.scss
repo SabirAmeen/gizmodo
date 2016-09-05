@@ -6,14 +6,9 @@ a:hover
 {
 	text-decoration: underline;
 }
-.main{
-	@media screen and (min-width: 1366px)
-	{
-		margin: 0 10%;
-	}
-}
+
 #loginbtn,
 #searchicon,
-#socialbtn {
+#socialbtn,aside {
     display: none;
 }

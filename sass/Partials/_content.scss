@@ -1,0 +1,165 @@
+.container {
+    .subscribe-heading {
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    .subscribe-input {
+        margin-right: 10px;
+        border: none;
+        border-bottom: 1px solid $border-color;
+        padding: 0.5rem;
+    }
+    .subscribe-btn {
+        @include size(75px, 30px);
+        @include border-radius(15px);
+        background-color: #0093ec;
+        color: $white;
+        border: 1px solid $white;
+        padding: 5px 0;
+    }
+    aside {
+        #side-section {
+            float: right;
+            padding: 3rem;
+            width: 275px;
+            #related {
+                display: block;
+                margin: 10px 0;
+            }
+            .related-vid {
+                display: inline-block;
+                width: 32%;
+            }
+            .reel-details{
+            	width:100%;
+            	img{
+            		width:100%;
+            	}
+            }
+            #related-one:hover{
+
+            }
+        }
+        @media screen and (min-width: $desktop) {
+            @include box-sizing(border-box);
+            width: 35%;
+            display: inline-block;
+            vertical-align: top;
+            padding: 2rem 1rem;
+            border: 1px solid $border-color;
+            border-right: none;
+        }
+    }
+    .articles {
+        .main-articles {
+            padding-top: 2rem;
+            @include box-sizing(border-box);
+            .content-heading {
+                padding: 0 1.5rem 1rem 1rem;
+                @include font(24px);
+                font-family: 'Montserrat', sans-serif;
+            }
+            .article-details {
+                @include inline-block;
+                margin-left: 1rem;
+                a {
+                    display: block;
+                    margin-bottom: 0.2rem;
+                }
+                .time {
+                    color: $faint;
+                    @include font(12px);
+                }
+                .author {
+                    color: rgba(0, 0, 0, 0.75);
+                }
+            }
+            .user-interact {
+                display: inline-block;
+                float: right;
+                margin-right: 15px;
+                span {
+                    display: inline-block;
+                    @include size(35px, 40px);
+                }
+                img {
+                    @include size(25px, 25px);
+                    margin-right: 10px;
+                    display: block;
+                }
+                @media screen and (min-width: $tablet) {
+                    span {
+                        display: block;
+                    }
+                    .bubble {
+                        order: 2;
+                    }
+                    .star {
+                        order: 1;
+                    }
+                    .menu {
+                        order: 3;
+                    }
+                }
+            }
+            .article-info {
+                display: inline-block;
+                .article-image {
+                    width: 100%;
+                    margin: 0.4rem 0;
+                    display: inline-block;
+                    @media screen and (min-width: $phones) {
+                        width: 25%;
+                        vertical-align: top;
+                    }
+                }
+                p {
+                    margin: 0 1rem;
+                    padding-bottom: 2rem;
+                    @include font(22px);
+                    border-bottom: 1px solid $border-color;
+                    display: inline-block;
+                    @media screen and (min-width: $phones) {
+                        width: 65%;
+                        border: none;
+                    }
+                }
+                @media screen and (min-width: $phones) {
+                    margin-left: 1rem;
+                }
+                @media screen and (min-width: $tablet) {
+                    width: 86%;
+                }
+            }
+            .odd-article {
+                @media screen and (min-width: $tablet) {
+                    & {
+                        margin: 0 1rem;
+                        width: 82%;
+                    }
+                    .article-image {
+                        width: 95%;
+                    }
+                    p {
+                        width: 95%;
+                        margin: 0;
+                    }
+                }
+            }
+            @media screen and (min-width: $phones) {
+                margin: 0 1rem;
+                padding-bottom: 2rem;
+                border-bottom: 1px solid $border-color;
+            }
+        }
+        @media screen and (min-width: $desktop) {
+            width: 64%;
+            display: inline-block;
+            border-left: 1px solid $border-color;
+            border-top: 1px solid $border-color;
+        }
+    }
+    @media screen and (min-width: $desktop) {
+        margin-top: 60px;
+    }
+}

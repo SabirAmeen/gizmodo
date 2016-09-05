@@ -74,17 +74,10 @@ a:hover {
   text-decoration: underline;
 }
 
-@media screen and (min-width: 1366px) {
-  /* line 9, ../sass/Partials/_common.scss */
-  .main {
-    margin: 0 10%;
-  }
-}
-
-/* line 15, ../sass/Partials/_common.scss */
+/* line 10, ../sass/Partials/_common.scss */
 #loginbtn,
 #searchicon,
-#socialbtn {
+#socialbtn, aside {
   display: none;
 }
 
@@ -249,5 +242,227 @@ a:hover {
   /* line 9, ../sass/Partials/_scroller.scss */
   .article-scroller .article-content {
     width: 31.7%;
+  }
+}
+
+/* line 2, ../sass/Partials/_content.scss */
+.container .subscribe-heading {
+  text-align: left;
+  margin-bottom: 20px;
+}
+/* line 6, ../sass/Partials/_content.scss */
+.container .subscribe-input {
+  margin-right: 10px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  padding: 0.5rem;
+}
+/* line 12, ../sass/Partials/_content.scss */
+.container .subscribe-btn {
+  width: 75px;
+  height: 30px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  background-color: #0093ec;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 5px 0;
+}
+/* line 21, ../sass/Partials/_content.scss */
+.container aside #side-section {
+  float: right;
+  padding: 3rem;
+  width: 275px;
+}
+/* line 25, ../sass/Partials/_content.scss */
+.container aside #side-section #related {
+  display: block;
+  margin: 10px 0;
+}
+/* line 29, ../sass/Partials/_content.scss */
+.container aside #side-section .related-vid {
+  display: inline-block;
+  width: 32%;
+}
+/* line 33, ../sass/Partials/_content.scss */
+.container aside #side-section .reel-details {
+  width: 100%;
+}
+/* line 35, ../sass/Partials/_content.scss */
+.container aside #side-section .reel-details img {
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  /* line 20, ../sass/Partials/_content.scss */
+  .container aside {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 35%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 2rem 1rem;
+    border: 1px solid #ddd;
+    border-right: none;
+  }
+}
+/* line 54, ../sass/Partials/_content.scss */
+.container .articles .main-articles {
+  padding-top: 2rem;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 57, ../sass/Partials/_content.scss */
+.container .articles .main-articles .content-heading {
+  padding: 0 1.5rem 1rem 1rem;
+  font-size: 24px;
+  font-weight: normal;
+  font-family: 'Montserrat', sans-serif;
+}
+/* line 62, ../sass/Partials/_content.scss */
+.container .articles .main-articles .article-details {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  margin-left: 1rem;
+}
+/* line 65, ../sass/Partials/_content.scss */
+.container .articles .main-articles .article-details a {
+  display: block;
+  margin-bottom: 0.2rem;
+}
+/* line 69, ../sass/Partials/_content.scss */
+.container .articles .main-articles .article-details .time {
+  color: #aaa;
+  font-size: 12px;
+  font-weight: normal;
+}
+/* line 73, ../sass/Partials/_content.scss */
+.container .articles .main-articles .article-details .author {
+  color: rgba(0, 0, 0, 0.75);
+}
+/* line 77, ../sass/Partials/_content.scss */
+.container .articles .main-articles .user-interact {
+  display: inline-block;
+  float: right;
+  margin-right: 15px;
+}
+/* line 81, ../sass/Partials/_content.scss */
+.container .articles .main-articles .user-interact span {
+  display: inline-block;
+  width: 35px;
+  height: 40px;
+}
+/* line 85, ../sass/Partials/_content.scss */
+.container .articles .main-articles .user-interact img {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  display: block;
+}
+@media screen and (min-width: 800px) {
+  /* line 91, ../sass/Partials/_content.scss */
+  .container .articles .main-articles .user-interact span {
+    display: block;
+  }
+  /* line 94, ../sass/Partials/_content.scss */
+  .container .articles .main-articles .user-interact .bubble {
+    order: 2;
+  }
+  /* line 97, ../sass/Partials/_content.scss */
+  .container .articles .main-articles .user-interact .star {
+    order: 1;
+  }
+  /* line 100, ../sass/Partials/_content.scss */
+  .container .articles .main-articles .user-interact .menu {
+    order: 3;
+  }
+}
+/* line 105, ../sass/Partials/_content.scss */
+.container .articles .main-articles .article-info {
+  display: inline-block;
+}
+/* line 107, ../sass/Partials/_content.scss */
+.container .articles .main-articles .article-info .article-image {
+  width: 100%;
+  margin: 0.4rem 0;
+  display: inline-block;
+}
+@media screen and (min-width: 600px) {
+  /* line 107, ../sass/Partials/_content.scss */
+  .container .articles .main-articles .article-info .article-image {
+    width: 25%;
+    vertical-align: top;
+  }
+}
+/* line 116, ../sass/Partials/_content.scss */
+.container .articles .main-articles .article-info p {
+  margin: 0 1rem;
+  padding-bottom: 2rem;
+  font-size: 22px;
+  font-weight: normal;
+  border-bottom: 1px solid #ddd;
+  display: inline-block;
+}
+@media screen and (min-width: 600px) {
+  /* line 116, ../sass/Partials/_content.scss */
+  .container .articles .main-articles .article-info p {
+    width: 65%;
+    border: none;
+  }
+}
+@media screen and (min-width: 600px) {
+  /* line 105, ../sass/Partials/_content.scss */
+  .container .articles .main-articles .article-info {
+    margin-left: 1rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  /* line 105, ../sass/Partials/_content.scss */
+  .container .articles .main-articles .article-info {
+    width: 86%;
+  }
+}
+@media screen and (min-width: 800px) {
+  /* line 136, ../sass/Partials/_content.scss */
+  .container .articles .main-articles .odd-article {
+    margin: 0 1rem;
+    width: 82%;
+  }
+  /* line 140, ../sass/Partials/_content.scss */
+  .container .articles .main-articles .odd-article .article-image {
+    width: 95%;
+  }
+  /* line 143, ../sass/Partials/_content.scss */
+  .container .articles .main-articles .odd-article p {
+    width: 95%;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 600px) {
+  /* line 54, ../sass/Partials/_content.scss */
+  .container .articles .main-articles {
+    margin: 0 1rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #ddd;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 53, ../sass/Partials/_content.scss */
+  .container .articles {
+    width: 64%;
+    display: inline-block;
+    border-left: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 1, ../sass/Partials/_content.scss */
+  .container {
+    margin-top: 60px;
   }
 }

@@ -7,10 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <link rel="icon" type="image/png" href="images/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
+<script id="scroller-content" type="text/x-jQuery-tmpl">
+    <article class="article-content">
+        <figure>
+            <a href="">
+                <img src="${articleImage}" alt="">
+            </a>
+        </figure>
+        <header>
+            <h2><a href=""></a>${heading} </h2>
+        </header>
+    </article>
+</script>
 
 <body>
     <header id="pagehead">
@@ -25,45 +37,44 @@
         </div>
         <button id="loginbtn">Login/signup</button>
     </header>
-    <section class="article-scroller">
-        <article id="article-scroll-one">
-            <h2><a href=""></a></h2>
-        </article>
-    </section>
-    <section class="container">
-        <section id="main-articles">
-            <article>
-                <h3><a href="">Russian Man Volunteers For First Human Head Transplant</a></h3>
-                <span>
+    <section class="main">
+        <section class="article-scroller">
+        </section>
+        <section class="container">
+            <section id="main-articles">
+                <article>
+                    <h3><a href="">Russian Man Volunteers For First Human Head Transplant</a></h3>
+                    <span>
             <a href="">Eve Peyser</a>
             <a href="">Yesterday 11:29pm</a>
         </span>
-                <div>
+                    <div>
+                        <img src="">
+                        <img src="">
+                        <img src="">
+                    </div>
                     <img src="">
-                    <img src="">
-                    <img src="">
-                </div>
-                <img src="">
-                <p>In news that is so weird, you almost won’t believe it, a Russian man has volunteered to be the victim for the world’s first head transplant, which two doctors want to perform early next year. Valery Spiridonov—a 31-year-old Russian man who operates an educational software company out of his home in the small city of…</p>
-            </article>
-        </section>
-        <aside>
-            <h3></h3>
-            <input type="text" placeholder="Add your email address">
-            <button>Subscribe</button>
-        </aside>
-        <section id="more-stories">
-            <h4></h4>
-            <article>
-                <img src="">
-                <p></p>
-            </article>
-            <button>More Stories ></button>
-            <section>
+                    <p>In news that is so weird, you almost won’t believe it, a Russian man has volunteered to be the victim for the world’s first head transplant, which two doctors want to perform early next year. Valery Spiridonov—a 31-year-old Russian man who operates an educational software company out of his home in the small city of…</p>
+                </article>
+            </section>
+            <aside>
                 <h3></h3>
                 <input type="text" placeholder="Add your email address">
                 <button>Subscribe</button>
-                </aside>
+            </aside>
+            <section id="more-stories">
+                <h4></h4>
+                <article>
+                    <img src="">
+                    <p></p>
+                </article>
+                <button>More Stories ></button>
+                <section>
+                    <h3></h3>
+                    <input type="text" placeholder="Add your email address">
+                    <button>Subscribe</button>
+                    </aside>
+                </section>
             </section>
         </section>
     </section>
@@ -80,6 +91,9 @@
             <li>RSS</li>
         </ul>
     </footer>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.4.4.js"></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>

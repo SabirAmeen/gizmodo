@@ -37,6 +37,9 @@
             		width:100%;
             	}
             }
+            #reel-one{
+            	display: block;
+            }
          }
         @media screen and (min-width: $desktop) {
             @include box-sizing(border-box);
@@ -88,6 +91,7 @@
                 @media screen and (min-width: $tablet) {
                     span {
                         display: block;
+                        margin-bottom:10px;
                     }
                     .bubble {
                         order: 2;

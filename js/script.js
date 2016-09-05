@@ -13,3 +13,23 @@
 
 
  $("#scroller-content").tmpl(scrollerImages).appendTo(".article-scroller");
+
+ $relOne = $('#related-one');
+ $relTwo = $('#related-two');
+ $relThree = $('#related-three');
+ $artOne = $('#reel-one');
+ $artTwo = $('#reel-two');
+ $artThree = $('#reel-three');
+ $reelDet = $('.reel-details');
+ $relOne.mouseenter(function(){
+ 	$reelDet.hide();
+ 	$artOne.show();
+ });
+ $relTwo.mouseenter(function(){
+ 	$reelDet.hide();
+ 	$artTwo.show();
+ });
+ $relThree.mouseenter(function(){
+ 	$reelDet.hide();
+ 	$artThree.show();
+ });

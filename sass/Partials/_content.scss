@@ -32,14 +32,12 @@
             }
             .reel-details{
             	width:100%;
+            	display: none;
             	img{
             		width:100%;
             	}
             }
-            #related-one:hover{
-
-            }
-        }
+         }
         @media screen and (min-width: $desktop) {
             @include box-sizing(border-box);
             width: 35%;

@@ -2,7 +2,7 @@ footer {
     padding: 2rem 0;
     border-top: 1px solid $border-color;
     margin: 10px;
-    width: 100%;
+    width: 95%;
     text-align: center;
     section {
         @include box-sizing(border-box);
@@ -10,7 +10,6 @@ footer {
         display: block;
         padding: 15px;
         text-align: left;
-        .footer-subscribe {}
         .footer-input {
             width: 63%;
         }
@@ -20,7 +19,7 @@ footer {
         }
     }
     h4 {
-        display: inline-block;
+        @include inline-block;
         margin-right: 10px;
         a {
             color: #333;
@@ -30,7 +29,7 @@ footer {
         display: block;
         margin-top: 20px;
         li {
-            display: inline-block;
+            @include inline-block;
             @include font(10px);
             width: 58px;
             a {

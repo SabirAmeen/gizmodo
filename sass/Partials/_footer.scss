@@ -1,0 +1,41 @@
+footer {
+    padding: 2rem 0;
+    border-top: 1px solid $border-color;
+    margin: 10px;
+    width: 100%;
+    text-align: center;
+    section {
+        @include box-sizing(border-box);
+        width: 100%;
+        display: block;
+        padding: 15px;
+        text-align: left;
+        .footer-subscribe {}
+        .footer-input {
+            width: 63%;
+        }
+        @media screen and (min-width: $phones) {
+            margin: 0 auto;
+            width: 500px;
+        }
+    }
+    h4 {
+        display: inline-block;
+        margin-right: 10px;
+        a {
+            color: #333;
+        }
+    }
+    ul {
+        display: block;
+        margin-top: 20px;
+        li {
+            display: inline-block;
+            @include font(10px);
+            width: 58px;
+            a {
+                color: $faint;
+            }
+        }
+    }
+}

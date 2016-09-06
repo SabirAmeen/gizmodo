@@ -71,6 +71,7 @@
                 span {
                     display: inline-block;
                     @include size(35px, 40px);
+                    color:$faint;
                 }
                 img {
                     @include size(25px, 25px);

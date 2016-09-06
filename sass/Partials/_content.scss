@@ -145,7 +145,7 @@
         }
         #more-stories {
             width: 98%;
-            padding: 0.5rem;
+            padding: 1rem;
             article {
                 width: 48%;
                 display: inline-block;
@@ -167,6 +167,7 @@
             }
             @media screen and (min-width: $phones) {
                 margin-top: 1rem;
+                padding-bottom: 2rem;
                 border-bottom: 1px solid $border-color;
                 h4 {
                     padding-left: 1.2rem;

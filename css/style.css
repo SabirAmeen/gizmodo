@@ -471,7 +471,7 @@ aside .subscribe-btn, footer .subscribe-btn {
 /* line 146, ../sass/Partials/_content.scss */
 .container .articles #more-stories {
   width: 98%;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 /* line 149, ../sass/Partials/_content.scss */
 .container .articles #more-stories article {
@@ -502,18 +502,19 @@ aside .subscribe-btn, footer .subscribe-btn {
   /* line 146, ../sass/Partials/_content.scss */
   .container .articles #more-stories {
     margin-top: 1rem;
+    padding-bottom: 2rem;
     border-bottom: 1px solid #ddd;
   }
-  /* line 171, ../sass/Partials/_content.scss */
+  /* line 172, ../sass/Partials/_content.scss */
   .container .articles #more-stories h4 {
     padding-left: 1.2rem;
   }
-  /* line 174, ../sass/Partials/_content.scss */
+  /* line 175, ../sass/Partials/_content.scss */
   .container .articles #more-stories article {
     width: 21%;
     padding-left: 1.2rem;
   }
-  /* line 177, ../sass/Partials/_content.scss */
+  /* line 178, ../sass/Partials/_content.scss */
   .container .articles #more-stories article img {
     vertical-align: top;
   }

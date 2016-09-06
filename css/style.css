@@ -69,7 +69,7 @@ a {
   text-decoration: none;
 }
 
-/* line 5, ../sass/Partials/_common.scss */
+/* line 6, ../sass/Partials/_common.scss */
 a:hover {
   text-decoration: underline;
 }
@@ -77,24 +77,34 @@ a:hover {
 /* line 10, ../sass/Partials/_common.scss */
 #loginbtn,
 #searchicon,
-#socialbtn, aside {
+#socialbtn,
+aside {
   display: none;
 }
 
-/* line 16, ../sass/Partials/_common.scss */
-aside .subscribe-heading, footer .subscribe-heading {
+/* line 19, ../sass/Partials/_common.scss */
+aside .subscribe-heading,
+footer .subscribe-heading {
   text-align: left;
   margin-bottom: 20px;
 }
-/* line 20, ../sass/Partials/_common.scss */
-aside .subscribe-input, footer .subscribe-input {
+/* line 23, ../sass/Partials/_common.scss */
+aside .subscribe-input,
+footer .subscribe-input {
   margin-right: 10px;
   border: none;
   border-bottom: 1px solid #ddd;
   padding: 0.5rem;
 }
-/* line 26, ../sass/Partials/_common.scss */
-aside .subscribe-btn, footer .subscribe-btn {
+/* line 28, ../sass/Partials/_common.scss */
+aside .subscribe-input:focus,
+footer .subscribe-input:focus {
+  border-color: #0093ec;
+  outline: none;
+}
+/* line 33, ../sass/Partials/_common.scss */
+aside .subscribe-btn,
+footer .subscribe-btn {
   width: 75px;
   height: 30px;
   -moz-border-radius: 15px;

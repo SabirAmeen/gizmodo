@@ -10,12 +10,15 @@ a:hover {
 #loginbtn,
 #searchicon,
 #socialbtn,
-aside {
+aside,
+.reel-details {
     display: none;
 }
-.main{
-	width:95%;
+
+.main {
+    width: 98%;
 }
+
 aside,
 footer {
     .subscribe-heading {
@@ -39,8 +42,8 @@ footer {
         color: $white;
         border: 1px solid $white;
         padding: 5px 0;
-        &:focus{
-        	outline:none;
+        &:focus {
+            outline: none;
         }
     }
 }

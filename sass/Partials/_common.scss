@@ -12,3 +12,23 @@ a:hover
 #socialbtn,aside {
     display: none;
 }
+aside,footer{
+	.subscribe-heading {
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    .subscribe-input {
+        margin-right: 10px;
+        border: none;
+        border-bottom: 1px solid $border-color;
+        padding: 0.5rem;
+    }
+    .subscribe-btn {
+        @include size(75px, 30px);
+        @include border-radius(15px);
+        background-color: $btn-color;
+        color: $white;
+        border: 1px solid $white;
+        padding: 5px 0;
+    }
+}

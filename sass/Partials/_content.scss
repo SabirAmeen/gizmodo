@@ -11,6 +11,8 @@
             .related-vid {
                 display: inline-block;
                 width: 32%;
+                position: relative;
+              
             }
             .reel-details {
                 width: 100%;
@@ -18,12 +20,12 @@
                 img {
                     width: 100%;
                 }
-                h3{
-                    margin:10px 0;
-                    @include font(16px,bold);
+                h3 {
+                    margin: 10px 0;
+                    @include font(16px, bold);
                 }
-                time{
-                    color:$faint;
+                time {
+                    color: $faint;
                 }
             }
             #reel-one {
@@ -71,7 +73,7 @@
                 span {
                     display: inline-block;
                     @include size(35px, 40px);
-                    color:$faint;
+                    color: $faint;
                 }
                 img {
                     @include size(25px, 25px);
@@ -165,6 +167,9 @@
                 background-color: $white;
                 border: 1px solid $btn-color;
                 color: $btn-color;
+                &:focus {
+                    outline: none;
+                }
             }
             @media screen and (min-width: $phones) {
                 margin-top: 1rem;

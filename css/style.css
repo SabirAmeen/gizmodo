@@ -476,23 +476,32 @@ a:hover {
 }
 /* line 170, ../sass/Partials/_content.scss */
 .container .articles #more-stories #more-stories-btn {
-  margin: 0 42%;
+  margin: 0 auto;
+  display: block;
+  width: 120px;
+  height: 30px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  background-color: #fff;
+  border: 1px solid #0093ec;
+  color: #0093ec;
 }
 @media screen and (min-width: 600px) {
   /* line 157, ../sass/Partials/_content.scss */
   .container .articles #more-stories {
     margin-top: 1rem;
   }
-  /* line 175, ../sass/Partials/_content.scss */
+  /* line 181, ../sass/Partials/_content.scss */
   .container .articles #more-stories h4 {
     padding-left: 1.2rem;
   }
-  /* line 178, ../sass/Partials/_content.scss */
+  /* line 184, ../sass/Partials/_content.scss */
   .container .articles #more-stories article {
     width: 21%;
     padding-left: 1.2rem;
   }
-  /* line 181, ../sass/Partials/_content.scss */
+  /* line 187, ../sass/Partials/_content.scss */
   .container .articles #more-stories article img {
     vertical-align: top;
   }

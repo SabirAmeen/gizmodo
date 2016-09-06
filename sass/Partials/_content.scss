@@ -12,7 +12,7 @@
     .subscribe-btn {
         @include size(75px, 30px);
         @include border-radius(15px);
-        background-color: #0093ec;
+        background-color: $btn-color;
         color: $white;
         border: 1px solid $white;
         padding: 5px 0;
@@ -168,7 +168,13 @@
                  height: 124px;
             }
             #more-stories-btn{
-                margin: 0 42%;
+                margin: 0 auto;
+                display: block;
+                @include size(120px, 30px);
+                @include border-radius(15px);
+                background-color: $white;
+                border:1px solid $btn-color;
+                color:$btn-color;
             }
             @media screen and (min-width: $phones) {
                 margin-top: 1rem;
@@ -196,5 +202,5 @@
     @media screen and (min-width: $desktop) {
         margin-top: 60px;
     }
-    
+
 }

@@ -135,10 +135,10 @@
             }
         }
         #more-stories {
-            width: 98%;
-            padding: 1rem;
+            width: 100%;
+            padding: 1rem 0 1rem 3px;
             article {
-                width: 48%;
+                width: 49%;
                 @include inline-block;
                 vertical-align: top;
                 margin-bottom: 10px;
@@ -166,7 +166,7 @@
                     padding-left: 1.2rem;
                 }
                 article {
-                    width: 21%;
+                    width: 22%;
                     padding-left: 1.2rem;
                     img {
                         vertical-align: top;

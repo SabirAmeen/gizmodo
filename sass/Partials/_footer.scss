@@ -1,8 +1,8 @@
 footer {
     padding: 2rem 0;
     border-top: 1px solid $border-color;
-    margin: 10px;
-    width: 95%;
+    margin:10px 0;
+    width: 100%;
     text-align: center;
     section {
         @include box-sizing(border-box);

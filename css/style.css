@@ -515,6 +515,9 @@ footer .subscribe-btn:focus {
 /* line 140, ../sass/Partials/_content.scss */
 .container .articles #more-stories article {
   width: 49%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
@@ -523,12 +526,12 @@ footer .subscribe-btn:focus {
   vertical-align: top;
   margin-bottom: 10px;
 }
-/* line 146, ../sass/Partials/_content.scss */
+/* line 147, ../sass/Partials/_content.scss */
 .container .articles #more-stories img {
   width: 100%;
   height: 124px;
 }
-/* line 149, ../sass/Partials/_content.scss */
+/* line 150, ../sass/Partials/_content.scss */
 .container .articles #more-stories #more-stories-btn {
   margin: 0 auto;
   display: block;
@@ -541,7 +544,7 @@ footer .subscribe-btn:focus {
   border: 1px solid #0093ec;
   color: #0093ec;
 }
-/* line 157, ../sass/Partials/_content.scss */
+/* line 158, ../sass/Partials/_content.scss */
 .container .articles #more-stories #more-stories-btn:focus {
   outline: none;
 }
@@ -552,16 +555,16 @@ footer .subscribe-btn:focus {
     padding-bottom: 2rem;
     border-bottom: 1px solid #ddd;
   }
-  /* line 165, ../sass/Partials/_content.scss */
+  /* line 166, ../sass/Partials/_content.scss */
   .container .articles #more-stories h4 {
     padding-left: 1.2rem;
   }
-  /* line 168, ../sass/Partials/_content.scss */
+  /* line 169, ../sass/Partials/_content.scss */
   .container .articles #more-stories article {
-    width: 21%;
+    width: 24%;
     padding-left: 1.2rem;
   }
-  /* line 171, ../sass/Partials/_content.scss */
+  /* line 172, ../sass/Partials/_content.scss */
   .container .articles #more-stories article img {
     vertical-align: top;
   }

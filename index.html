@@ -5,68 +5,166 @@
     <title>Gizmodo</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
+<script id="scroller-content" type="text/x-jQuery-tmpl">
+    <article class="article-content">
+        <figure>
+            <a href="">
+                <img src="${articleImage}" alt="">
+            </a>
+        </figure>
+        <header>
+            <h2><a href=""></a>${heading} </h2>
+        </header>
+    </article>
+</script>
 
 <body>
-    <header>
-        <img src="">
-        <h1>GIZMODO</h1>
+    <header id="pagehead">
+        <a href=""><img id="menuicon" src="images/menu.gif" alt="Menu icon"></a>
+        <a href=""><img id="searchicon" src="images/search.png" alt="Search icon"></a>
+        <div id="masthead">
+            <h1 id="logo"><a href="">GIZMODO</a></h1>
+            <span id="socialbtn">
+            <a href=""><img id="plusicon" src="images/plus.png" alt="Social account icon"></a>
+            <a id="follow" href="">Follow</a>
+            </span>
+        </div>
+        <button id="loginbtn">Login/signup</button>
     </header>
-    <section class="article-scroller">
-        <article id="article-scroll-one">
-            <h2><a href=""></a></h2>
-        </article>
-    </section>
-    <section class="container">
-        <section id="main-articles">
-            <article>
-                <h3><a href="">Russian Man Volunteers For First Human Head Transplant</a></h3>
-                <span>
-			<a href="">Eve Peyser</a>
-			<a href="">Yesterday 11:29pm</a>
-		</span>
-                <div>
-                    <img src="">
-                    <img src="">
-                    <img src="">
-                </div>
-                <img src="">
-                <p>In news that is so weird, you almost won’t believe it, a Russian man has volunteered to be the victim for the world’s first head transplant, which two doctors want to perform early next year. Valery Spiridonov—a 31-year-old Russian man who operates an educational software company out of his home in the small city of…</p>
-            </article>
+    <section class="main">
+        <section class="article-scroller">
         </section>
-        <aside>
-            <h3></h3>
-            <input type="text" placeholder="Add your email address">
-            <button>Subscribe</button>
-        </aside>
-        <section id="more-stories">
-            <h4></h4>
-            <article>
-                <img src="">
-                <p></p>
-            </article>
-            <button>More Stories ></button>
-            <section>
-                <h3></h3>
-                <input type="text" placeholder="Add your email address">
-                <button>Subscribe</button>
-                </aside>
+        <section class="container">
+            <aside>
+                <section id="side-section">
+                    <h3 class="subscribe-heading">Want Gizmodo’s email newsletter?</h3>
+                    <input class="subscribe-input" type="text" placeholder="Add your email address">
+                    <button class="subscribe-btn">Subscribe</button>
+                    <span id="related"><strong>You</strong> may also like</span>
+                    <img id="related-one" class="related-vid" src="https://i.kinja-img.com/gawker-media/image/upload/s--wZbMWoOS--/c_fill,fl_progressive,g_north,h_77,q_80,w_137/wcgbb684sohubqlmyeht.jpg" alt="concourse"></img>
+                    <img id="related-two" class="related-vid" src="https://i.kinja-img.com/gawker-media/image/upload/s--exLSd5sb--/c_fill,fl_progressive,g_north,h_77,q_80,w_137/1451000351154603181.jpg" alt="Garage"></img>
+                    <img id="related-three" class="related-vid" src="https://i.kinja-img.com/gawker-media/image/upload/s--PE0Xw0Le--/c_fill,fl_progressive,g_north,h_77,q_80,w_137/feiapu0judkdh409q43h.jpg" alt="Cosplay"></img>
+                    <article id="reel-one" class="reel-details">
+                        <img src="https://i.kinja-img.com/gawker-media/image/upload/s--Jz40XSEk--/c_fill,fl_progressive,g_north,h_180,q_80,w_320/wcgbb684sohubqlmyeht.jpg" alt="Concourse">
+                        <strong>The Concourse</strong>
+                        <h3><a href="">Phyllis Schlafly Finally Croaks</a></h3>
+                        <time>Yesterday 9:52pm</time>
+                    </article>
+                    <article id="reel-two" class="reel-details">
+                        <img src="https://i.kinja-img.com/gawker-media/image/upload/s--Bt_pn5g9--/c_fill,fl_progressive,g_north,h_180,q_80,w_320/1451000351154603181.jpg" alt="Garage">
+                        <strong>The Garage</strong>
+                        <h3><a href="">Should You Swap Your Headlight Bulbs For LEDs?</a></h3>
+                        <time>Yesterday 9:52pm</time>
+                    </article>
+                    <article id="reel-three" class="reel-details">
+                        <img src="https://i.kinja-img.com/gawker-media/image/upload/s--4OgmiWqj--/c_fill,fl_progressive,g_north,h_180,q_80,w_320/feiapu0judkdh409q43h.jpg" alt="Cosplay">
+                        <strong>Cosplay</strong>
+                        <h3><a href="">Oh Man This <i>Warhammer 40K</i></a></h3>
+                        <time>Yesterday 9:52pm</time>
+                    </article>
+                </section>
+            </aside>
+            <section class="articles">
+                <article class="main-articles">
+                    <h3 class="content-heading"><a href="">Nerd Wins Scrabble Championship With Word You’ve Never Heard Of</a></h3>
+                    <div>
+                        <span class="article-details">
+                         <a class="author" href="">Eve Peyser</a>
+                        <a class="time" href="">Yesterday 11:29pm</a>
+                        </span>
+                        <div class="user-interact">
+                            <span class="bubble">
+                            <img src="images/bubble.png" alt="bubble comment">
+                            12</span>
+                            <span class="star">
+                            <img src="images/star.png" alt="Rating">
+                            12</span>
+                            <span class="menu">
+                            <img src="images/options.png" alt="Menu">
+                            </span>
+                        </div>
+                    </div>
+                    <section class="article-info">
+                        <img class="article-image" src="https://i.kinja-img.com/gawker-media/image/upload/s--i3Ij7LYK--/c_fill,fl_progressive,g_center,h_180,q_80,w_320/pazboubayqmenbmj2qoc.jpg" alt="Scrabble">
+                        <p>As you probably already know, the World Scrabble Championship 2016 final took place on Saturday. Brett Smitheram, a 37-year-old east Londoner took home the grand prize of €7,000, which is equivalent to about $7,815 USD.</p>
+                    </section>
+                </article>
+                <article class="main-articles">
+                    <h3 class="content-heading"><a href="">Intel Lawyers Tell John McAfee He Can't Call His Company 'John McAfee'</a></h3>
+                    <div>
+                        <span class="article-details">
+                         <a class="author" href="">Eve Peyser</a>
+                        <a class="time" href="">Yesterday 11:29pm</a>
+                        </span>
+                        <div class="user-interact">
+                            <span class="bubble">
+                            <img src="images/bubble.png" alt="bubble comment">
+                             12</span>
+                            <span class="star">
+                            <img src="images/star.png" alt="rating">
+                             12</span>
+                            <span class="menu">
+                            <img src="images/options.png" alt="menu">
+                            </span>
+                        </div>
+                    </div>
+                    <section class="article-info odd-article">
+                        <img class="article-image" src="https://i.kinja-img.com/gawker-media/image/upload/voewprn5vvfe0euq3xzz.jpg" alt="John Macafee">
+                        <p>Sometimes, all a man has in this world is his name, but according to Intel, antivirus pioneer and living cautionary tale John McAfee <a href="">doesn’t even have that</a>.</p>
+                    </section>
+                </article>
+                <section id="more-stories">
+                    <h4>More from Gizmodo</h4>
+                    <article>
+                        <img src="https://i.kinja-img.com/gawker-media/image/upload/s--iVmhzWKd--/c_fit,fl_progressive,q_80,w_320/q1gup0rbsxv4y6jgi8oa.jpg" alt="stop motion">
+                        <p><a href="">Check out a Century of Stop-Motion Animation, From </a></p>
+                    </article>
+                    <article>
+                        <img src="https://i.kinja-img.com/gawker-media/image/upload/s--AAeMhezw--/c_fit,fl_progressive,q_80,w_320/ytcj23qfaj6e8jrh4kio.jpg" alt="spaceX">
+                        <p><a href="">Owner of Satellite On Doomed SpaceX Rocket Wants $50 Million</a></p>
+                    </article>
+                    <article>
+                        <img src="https://i.kinja-img.com/gawker-media/image/upload/s--Bwo8HYgV--/c_fit,fl_progressive,q_80,w_320/xlu2m3hzhaeozibcw6oj.jpg" alt="Oklahoma">
+                        <p><a href="">Oklahoma Shuts Down Wells In the Wake of the Quake</a></p>
+                    </article>
+                    <article>
+                        <img src="https://i.kinja-img.com/gawker-media/image/upload/s--qJp8O8Un--/c_fit,fl_progressive,q_80,w_320/rlucpsncfpwbubqs6clf.jpg" alt="CrossFit">
+                        <p><a href="">Take a Day Off Between CrossFit Workouts, Study Says</a></p>
+                    </article>
+                    <button id="more-stories-btn">More Stories ></button>
+                </section>
             </section>
         </section>
     </section>
     <footer>
-        <h4>About Blog</h4>
-        <h4>Need Help?</h4>
-        <h4>Content Guide</h4>
+        <section>
+            <h3 class="subscribe-heading footer-subscribe">Want Gizmodo’s email newsletter?</h3>
+            <input class="subscribe-input footer-input" type="text" placeholder="Add your email address">
+            <button class="subscribe-btn footer-btn">Subscribe</button>
+        </section>
+        <h4><a href="">About Blog</a></h4>
+        <h4><a href="">Need Help?</a></h4>
+        <h4><a href="">Content Guide</a></h4>
         <ul>
-            <li>Permissions</li>
-            <li>Privacy</li>
-            <li>Terms of Use</li>
-            <li>Advertising</li>
-            <li>jobs</li>
-            <li>RSS</li>
+            <li><a href="">Permissions</li></a>
+                <li><a href="">Privacy</li></a>
+                    <li><a href="">Terms of Use</li></a>
+                        <li><a href="">Advertising</li></a>
+                            <li><a href="">jobs</li></a>
+                                <li><a href="">RSS</li></a>
         </ul>
     </footer>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.4.4.js"></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>

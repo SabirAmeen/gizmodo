@@ -1,0 +1,66 @@
+#pagehead {
+    height: 50px;
+    padding: 1px;
+    border-bottom: 1px solid $border-color;
+    #masthead {
+        display: inline-block;
+        @include size(69%, 100%);
+        @media screen and (min-width: $tablet) {
+            &:hover #socialbtn {
+                display: inline-block;
+                line-height: 3.3;
+                padding-left: 13px;
+            }
+            #plusicon {
+                @include size(10px);
+            }
+            #follow {
+                color: $link-color;
+            }
+        }
+        #logo {
+            font-family: $logo-font-family;
+            @include float-left;
+            height: 100%;
+            line-height: 1.7;
+            font-size: 35px;
+            font-weight: bold;
+            @media screen and (min-width: $tablet) {
+                margin-left: 50%;
+            }
+            a:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    #menuicon {
+        @include size(39px);
+        @include float-left;
+        margin-top: 11px;
+        margin-left: 11px;
+    }
+    #loginbtn {
+        @media screen and (min-width: $phones) {
+            display: inline-block;
+            @include float-right;
+            @include size(100px, 30px);
+            @include border-radius(5px);
+            border: 1px solid $border-color;
+            background-color: $white;
+            margin: 10px 15px;
+            color: #aaa;
+            &:hover {
+                color: white;
+                background-color: #0093ec;
+            }
+        }
+    }
+    #searchicon {
+        @media screen and (min-width: $tablet) {
+            display: inline-block;
+            @include size(20px);
+            @include float-left;
+            margin-top: 17px;
+        }
+    }
+}
